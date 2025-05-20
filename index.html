@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherx.film - Premium Movie Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1 class="logo">Aetherx<span>.film</span></h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navbar -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">Aetherx<span>.film</span></a>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search movies...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle-checkbox">
+                    <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+                
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign Up</button>
+                </div>
+                
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="#">Aetherx<span>.film</span></a>
+            </div>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-search">
+            <input type="text" placeholder="Search movies...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        
+        <div class="mobile-auth">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+        
+        <div class="mobile-settings">
+            
+            <div class="mobile-theme">
+                <span>Theme:</span>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="mobile-theme-toggle">
+                    <label for="mobile-theme-toggle" class="theme-toggle-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero 3D Carousel Section -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <div class="carousel-image">
+                        <img src="https://via.placeholder.com/1920x1080?text=Dune:+Part+Two" alt="Dune: Part Two">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="movie-badge">New Release</div>
+                        <h1 class="movie-title">Dune: Part Two</h1>
+                        <div class="movie-meta">
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.7</span>
+                            <span class="movie-year">2024</span>
+                            <span class="movie-duration">166 min</span>
+                            <span class="movie-genre">Sci-Fi, Adventure</span>
+                        </div>
+                        <p class="movie-description">
+                            Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.
+                        </p>
+                        <div class="movie-actions">
+                            <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                            <button class="trailer-btn"><i class="fas fa-film"></i> Trailer</button>
+                            <button class="add-btn"><i class="fas fa-plus"></i> Add to List</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://via.placeholder.com/1920x1080?text=Oppenheimer" alt="Oppenheimer">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="movie-badge">Award Winner</div>
+                        <h1 class="movie-title">Oppenheimer</h1>
+                        <div class="movie-meta">
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.5</span>
+                            <span class="movie-year">2023</span>
+                            <span class="movie-duration">180 min</span>
+                            <span class="movie-genre">Biography, Drama</span>
+                        </div>
+                        <p class="movie-description">
+                            The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.
+                        </p>
+                        <div class="movie-actions">
+                            <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                            <button class="trailer-btn"><i class="fas fa-film"></i> Trailer</button>
+                            <button class="add-btn"><i class="fas fa-plus"></i> Add to List</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Item 3 -->
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://via.placeholder.com/1920x1080?text=The+Batman" alt="The Batman">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="movie-badge">Trending</div>
+                        <h1 class="movie-title">The Batman</h1>
+                        <div class="movie-meta">
+                            <span class="movie-rating"><i class="fas fa-star"></i> 7.9</span>
+                            <span class="movie-year">2022</span>
+                            <span class="movie-duration">176 min</span>
+                            <span class="movie-genre">Action, Crime, Drama</span>
+                        </div>
+                        <p class="movie-description">
+                            When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption.
+                        </p>
+                        <div class="movie-actions">
+                            <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                            <button class="trailer-btn"><i class="fas fa-film"></i> Trailer</button>
+                            <button class="add-btn"><i class="fas fa-plus"></i> Add to List</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Item 4 -->
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://via.placeholder.com/1920x1080?text=Interstellar" alt="Interstellar">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="movie-badge">Fan Favorite</div>
+                        <h1 class="movie-title">Interstellar</h1>
+                        <div class="movie-meta">
+                            <span class="movie-rating"><i class="fas fa-star"></i> 8.6</span>
+                            <span class="movie-year">2014</span>
+                            <span class="movie-duration">169 min</span>
+                            <span class="movie-genre">Adventure, Drama, Sci-Fi</span>
+                        </div>
+                        <p class="movie-description">
+                            A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                        </p>
+                        <div class="movie-actions">
+                            <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                            <button class="trailer-btn"><i class="fas fa-film"></i> Trailer</button>
+                            <button class="add-btn"><i class="fas fa-plus"></i> Add to List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Trending Movies Section -->
+        <section class="movie-section trending-section">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-fire"></i> Trending Now</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="movie-grid">
+                <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=Dune:+Part+Two" alt="Dune: Part Two">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 8.7</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>2024</span>
+                                    <span>166 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">Dune: Part Two</h3>
+                        <div class="movie-info-genre">Sci-Fi, Adventure</div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=Oppenheimer" alt="Oppenheimer">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 8.5</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>2023</span>
+                                    <span>180 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">Oppenheimer</h3>
+                        <div class="movie-info-genre">Biography, Drama</div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=The+Batman" alt="The Batman">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 7.9</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>2022</span>
+                                    <span>176 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">The Batman</h3>
+                        <div class="movie-info-genre">Action, Crime, Drama</div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 4 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=Interstellar" alt="Interstellar">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 8.6</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>2014</span>
+                                    <span>169 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">Interstellar</h3>
+                        <div class="movie-info-genre">Adventure, Drama, Sci-Fi</div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 5 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=Inception" alt="Inception">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 8.8</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>2010</span>
+                                    <span>148 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">Inception</h3>
+                        <div class="movie-info-genre">Action, Adventure, Sci-Fi</div>
+                    </div>
+                </div>
+                
+                <!-- Movie Card 6 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/300x450?text=The+Shawshank+Redemption" alt="The Shawshank Redemption">
+                        <div class="movie-poster-overlay">
+                            <div class="movie-poster-content">
+                                <div class="movie-poster-rating"><i class="fas fa-star"></i> 9.3</div>
+                                <button class="movie-poster-play"><i class="fas fa-play"></i></button>
+                                <div class="movie-poster-info">
+                                    <span>1994</span>
+                                    <span>142 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-info-title">The Shawshank Redemption</h3>
+                        <div class="movie-info-genre">Drama</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="#">Aetherx<span>.film</span></a>
+                <p>Your ultimate destination for premium movie experiences.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">My List</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Horror</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">About Aetherx</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h4>Subscribe to our newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aetherx.film. All rights reserved.</p>
+            <div class="app-links">
+                <a href="#"><i class="fab fa-android"></i> Android App</a>
+                <a href="#"><i class="fab fa-apple"></i> iOS App</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
